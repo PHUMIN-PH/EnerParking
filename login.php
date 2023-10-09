@@ -36,10 +36,16 @@
                     <div class="row">
                         <div class="col"></div>
                         <div class="col-6 p-5">
-                            <div class="text-center">
+                            <!-- <div class="text-center">
                                 <h1 class="h4 text-gray-900 font-weight-bold mb-4 p-2">Energetic Management Center</h1>
-                            </div>
-                            <form action="ssrc/php/login.php" class="user" method="post">
+                            </div> -->
+                            <form action="php/login.php" method="post" class="user">
+                            <h1 class="h4 text-gray-900 font-weight-bold mb-4 p-2">Energetic Management Center</h1>
+                                <?php if(isset($_GET['error'])) { ?>
+                                <div class="alert alert-danger" role="alert">
+                                    <?php echo $_GET['error']; ?>
+                                </div>
+                                <?php } ?>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-user" id="username" name="username"
                                         aria-describedby="emailHelp" placeholder="Enter Username">
@@ -56,7 +62,7 @@
                                     </div>
                                 </div>
                             
-                                <button type="submit" class="btn btn-primary btn-block " name="Loginsubmit">Submit</button>
+                                <button type="submit" class="btn btn-primary btn-block " name="submit">submit</button>
 
                                 <!-- <a href="index.html" class="btn btn-primary btn-user btn-block">
                                     Login
