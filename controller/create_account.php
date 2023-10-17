@@ -47,16 +47,12 @@
                                 </div>
                                 <?php } ?>
                                 <div class="form-group">
-                                    <input type="username" class="form-control form-control-user" id="username" name="username"
-                                        aria-describedby="emailHelp" placeholder="Enter Username"
-                                        value ="<?php if (isset($GET['username'])) 
-                                                          echo($GET['username']); ?>">
+                                    <input type="email" class="form-control form-control-user" id="username" name="username"
+                                        aria-describedby="emailHelp" placeholder="Enter Username">
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control form-control-user"
-                                        id="password" placeholder="Password" name="password"
-                                        value ="<?php if (isset($GET['password'])) 
-                                                          echo($GET['password']); ?>">
+                                        id="password" placeholder="Password" name="password">
                                 </div>
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox small">
